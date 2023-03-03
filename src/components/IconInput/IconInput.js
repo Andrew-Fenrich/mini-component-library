@@ -51,13 +51,14 @@ const IconInput = ({
 const Wrapper = styled.div`
   display: block;
   position: relative;
+  //Set colour here for icon to inherit 
   color: ${COLORS.gray700};
 
   &:hover {
     color: ${COLORS.black};
   }
 
-\`       ;
+\`        ;
 
 `
 
