@@ -24,7 +24,7 @@ const IconInput = ({
     icon,
     width = 250,
     size,
-    placeholder,
+    ...delegated
 }) => {
     const styles = STYLES[size];
 
@@ -35,7 +35,7 @@ const IconInput = ({
                 <Icon id={icon} size={styles.iconSize}/>
             </IconWrapper>
             <TextInput
-                placeholder={placeholder}
+                {...delegated}
                 style={{
                     '--width': width + 'px',
                     '--height': styles.height / 16 + 'rem',
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
     color: ${COLORS.black};
   }
 
-\`     ;
+\`       ;
 
 `
 
